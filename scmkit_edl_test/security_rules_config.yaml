@@ -1,0 +1,75 @@
+security_rules:
+
+  # ── Block traffic TO known bad IPs (IP EDLs in destination) ─────────────────
+  # IP-type EDLs are treated as address objects — usable in source/destination.
+  - name: cpt-block-bad-ip-destination
+    folder: Prisma Access
+    rulebase: pre
+    description: "Block outbound traffic to known bad IP addresses from EDL"
+    from: [any]
+    to: [any]
+    source: [any]
+    destination:
+      - cpt-ip-lists-01
+      - cpt-ip-lists-02
+      - cpt-ip-lists-03
+      - cpt-ip-lists-04
+      - cpt-ip-lists-05
+    application: [any]
+    service: [any]
+    action: deny
+
+  # ── Block traffic FROM known bad IPs (IP EDLs in source) ────────────────────
+  - name: cpt-block-bad-ip-source
+    folder: Prisma Access
+    rulebase: pre
+    description: "Block inbound traffic from known bad IP addresses from EDL"
+    from: [any]
+    to: [any]
+    source:
+      - cpt-ip-lists-01
+      - cpt-ip-lists-02
+      - cpt-ip-lists-03
+      - cpt-ip-lists-04
+      - cpt-ip-lists-05
+    destination: [any]
+    application: [any]
+    service: [any]
+    action: deny
+
+  # ── Block access to known bad URLs (URL EDLs in category) ────────────────────
+  # URL-type EDLs appear as custom URL categories — usable in the category field.
+  - name: cpt-block-bad-urls
+    folder: Prisma Access
+    rulebase: pre
+    description: "Block access to URLs in EDL URL lists"
+    from: [any]
+    to: [any]
+    source: [any]
+    destination: [any]
+    application: [any]
+    service: [any]
+    category:
+      - cpt-url-lists-01
+      - cpt-url-lists-02
+      - cpt-url-lists-03
+      - cpt-url-lists-04
+      - cpt-url-lists-05
+    action: deny
+
+  # ── Block bad domains via DNS Security Profile ──────────────────────────────
+  # Domain-type EDLs must go through a DNS Security Profile (botnet_domains.lists).
+  # Profile group cpt-domain-block-group is created by dns_security_config.yaml.
+  - name: cpt-block-bad-domains
+    folder: Prisma Access
+    rulebase: pre
+    description: "Block domains in EDL domain lists via DNS Security Profile"
+    from: [any]
+    to: [any]
+    source: [any]
+    destination: [any]
+    application: [dns]
+    service: [application-default]
+    action: allow
+    profile_setting:
+      group: [cpt-domain-block-group]

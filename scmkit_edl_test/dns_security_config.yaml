@@ -1,0 +1,51 @@
+dns_security_profiles:
+  - name: cpt-dns-security-domain-block
+    folder: Prisma Access
+    description: "Block domains from CPT EDL domain lists via botnet_domains"
+    botnet_domains:
+      lists:
+        - name: cpt-domain-lists-01
+          action:
+            block: {}
+          packet_capture: disable
+        - name: cpt-domain-lists-02
+          action:
+            block: {}
+          packet_capture: disable
+        - name: cpt-domain-lists-03
+          action:
+            block: {}
+          packet_capture: disable
+        - name: cpt-domain-lists-04
+          action:
+            block: {}
+          packet_capture: disable
+        - name: cpt-domain-lists-05
+          action:
+            block: {}
+          packet_capture: disable
+        - name: cpt-domain-lists-06
+          action:
+            block: {}
+          packet_capture: disable
+        - name: cpt-domain-lists-07
+          action:
+            block: {}
+          packet_capture: disable
+        - name: cpt-domain-lists-08
+          action:
+            block: {}
+          packet_capture: disable
+        - name: cpt-domain-lists-09
+          action:
+            block: {}
+          packet_capture: disable
+        - name: cpt-domain-lists-10
+          action:
+            block: {}
+          packet_capture: disable
+
+profile_groups:
+  - name: cpt-domain-block-group
+    folder: Prisma Access
+    dns_security: cpt-dns-security-domain-block

@@ -1,0 +1,17 @@
+/* Palo Alto Networks brand colours */
+:root {
+  --md-primary-fg-color:        #FA5823;   /* PAN orange */
+  --md-primary-fg-color--light: #FB7A4D;
+  --md-primary-fg-color--dark:  #D44010;
+  --md-accent-fg-color:         #FA5823;
+}
+
+/* Slightly wider content on large screens */
+.md-grid {
+  max-width: 1280px;
+}
+
+/* Code blocks */
+.highlight pre {
+  border-radius: 6px;
+}

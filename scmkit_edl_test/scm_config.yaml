@@ -1,0 +1,17 @@
+scm:
+  client_id: "suchi-scm-01-sdk@1209312619.iam.panserviceaccount.com"
+  client_secret: "e70d8769-6b2b-4d6a-9cfb-19bc39e4ab1b"
+  tsg_id: "1209312619"
+
+  # QA environment
+  token_url: "https://auth.qa.appsvc.paloaltonetworks.com/am/oauth2/access_token"
+  base_url: "https://qa.api.sase.paloaltonetworks.com"
+  log_base_url: "https://pa-api-us-qa01.tools.panclouddev.com"
+
+  # Production environment (uncomment and remove QA lines above)
+  # token_url: "https://auth.apps.paloaltonetworks.com/am/oauth2/access_token"
+  # base_url: "https://api.sase.paloaltonetworks.com"
+  # log_base_url: ""
+
+  timeout: 30      # optional, default 30
+  max_retries: 3   # optional, default 3

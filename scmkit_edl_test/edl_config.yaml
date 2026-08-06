@@ -1,0 +1,163 @@
+edls:
+  # IP Lists (5) — recurring: five_minute
+  - name: cpt-ip-lists-01
+    folder: Prisma Access
+    type:
+      ip:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/ip_lists/ip_list_01.txt"
+        recurring:
+          five_minute: {}
+
+  - name: cpt-ip-lists-02
+    folder: Prisma Access
+    type:
+      ip:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/ip_lists/ip_list_02.txt"
+        recurring:
+          five_minute: {}
+
+  - name: cpt-ip-lists-03
+    folder: Prisma Access
+    type:
+      ip:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/ip_lists/ip_list_03.txt"
+        recurring:
+          five_minute: {}
+
+  - name: cpt-ip-lists-04
+    folder: Prisma Access
+    type:
+      ip:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/ip_lists/ip_list_04.txt"
+        recurring:
+          five_minute: {}
+
+  - name: cpt-ip-lists-05
+    folder: Prisma Access
+    type:
+      ip:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/ip_lists/ip_list_05.txt"
+        recurring:
+          five_minute: {}
+
+  # URL Lists (5) — recurring: hourly
+  - name: cpt-url-lists-01
+    folder: Prisma Access
+    type:
+      url:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/url_lists/url_list_01.txt"
+        recurring:
+          hourly: {}
+
+  - name: cpt-url-lists-02
+    folder: Prisma Access
+    type:
+      url:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/url_lists/url_list_02.txt"
+        recurring:
+          hourly: {}
+
+  - name: cpt-url-lists-03
+    folder: Prisma Access
+    type:
+      url:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/url_lists/url_list_03.txt"
+        recurring:
+          hourly: {}
+
+  - name: cpt-url-lists-04
+    folder: Prisma Access
+    type:
+      url:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/url_lists/url_list_04.txt"
+        recurring:
+          hourly: {}
+
+  - name: cpt-url-lists-05
+    folder: Prisma Access
+    type:
+      url:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/url_lists/url_list_05.txt"
+        recurring:
+          hourly: {}
+
+  # Domain Lists (10) — recurring: hourly
+  - name: cpt-domain-lists-01
+    folder: Prisma Access
+    type:
+      domain:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/domain_lists/domain_list_01.txt"
+        recurring:
+          hourly: {}
+
+  - name: cpt-domain-lists-02
+    folder: Prisma Access
+    type:
+      domain:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/domain_lists/domain_list_02.txt"
+        recurring:
+          hourly: {}
+
+  - name: cpt-domain-lists-03
+    folder: Prisma Access
+    type:
+      domain:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/domain_lists/domain_list_03.txt"
+        recurring:
+          hourly: {}
+
+  - name: cpt-domain-lists-04
+    folder: Prisma Access
+    type:
+      domain:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/domain_lists/domain_list_04.txt"
+        recurring:
+          hourly: {}
+
+  - name: cpt-domain-lists-05
+    folder: Prisma Access
+    type:
+      domain:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/domain_lists/domain_list_05.txt"
+        recurring:
+          hourly: {}
+
+  - name: cpt-domain-lists-06
+    folder: Prisma Access
+    type:
+      domain:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/domain_lists/domain_list_06.txt"
+        recurring:
+          hourly: {}
+
+  - name: cpt-domain-lists-07
+    folder: Prisma Access
+    type:
+      domain:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/domain_lists/domain_list_07.txt"
+        recurring:
+          hourly: {}
+
+  - name: cpt-domain-lists-08
+    folder: Prisma Access
+    type:
+      domain:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/domain_lists/domain_list_08.txt"
+        recurring:
+          hourly: {}
+
+  - name: cpt-domain-lists-09
+    folder: Prisma Access
+    type:
+      domain:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/domain_lists/domain_list_09.txt"
+        recurring:
+          hourly: {}
+
+  - name: cpt-domain-lists-10
+    folder: Prisma Access
+    type:
+      domain:
+        url: "https://raw.githubusercontent.com/sspallai/edl_objects/main/lists/domain_lists/domain_list_10.txt"
+        recurring:
+          hourly: {}
